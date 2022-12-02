@@ -8,19 +8,87 @@
     <!-- fonts, css, js -->
     <link type="text/css" rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <header>
-      <h3>header</h3>
-    </header>
-    <section class="main-wrapper">
-      <main>
-        <h1>Main Title</h1>
-        <p>같이 잠, 강아지, 남은 것은 내 계십니다. 이름을 없이 묻힌 파란 것은 까닭입니다. 라이너 마리아 이름과 당신은 이제 아직 걱정도 별 봅니다. 별빛이 잔디가 계집애들의 패, 청춘이 나의 노새, 않은 애기 봅니다. 마디씩 둘 파란 남은 버리었습니다. 봄이 이국 어머님, 별들을 봅니다. 묻힌 것은 흙으로 하나에 오면 하나 옥 경, 아름다운 봅니다. 밤을 잔디가 하나의 이름과, 어머니 봅니다. 다 걱정도 별 별들을 버리었습니다. 위에도 가을로 하나에 이제 흙으로 쉬이 하나에 별을 있습니다. 슬퍼하는 하나에 이웃 어머님, 새워 까닭입니다.</p>
-      </main>
-    </section>
-    <footer>
-      <h3>footer</h3>
-    </footer>
-  </body>
   
+<body>
+<header>
+ <div id="header>
+	<div class="main_header">
+<!--헤더: 로고, 카테고리-->
+		<section class="content-wrapper">
+			<!-- 로고 -->
+			<div class="top_logo"><a href="/"><img src="logo.png"></a></div>
+      
+			<!-- 카테고리 -->
+				<ul class="category">
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">MYPAGE</a></li>
+					<li><a href="#">ORDER</a></li>
+					<li><a href="#">CART</a></li>	
+				</ul>
+		</section>
+	</div>
+</header>
+
+<!--상품 디테일-->
+<div class="product-info">
+  <div class="product-image">
+    <div class="keyImg ">
+        <img src="handcream1.png" alt="라벤더 핸드 크림">            
+    </div>
+  </div>
+
+<!--상품 기본 정보, 이름, 가격-->
+  <div class="product-detail">
+  <table border="1" summary="product_info">
+  <tbody class="product_info">
+  <!--상품명-->
+  <tr rel="상품명" class="product_info">
+  <th scope="row"><span>상품명</span></th>
+  <td><span>라벤더 핸드 크림</span></td></tr>
+  <!--상품가격-->
+  <tr rel="판매가" class="product_info">
+  <th scope="row"><span>판매가</span></th>
+  <td><span>28,000원</span></td>
+  </tr>
+  </tbody>
+  </table>
+
+  <table border="2" summary="product_order">
+  <!--상품 수량 선택하기-->
+  <tbody class="product_order1">
+  <tr>
+  <!--상품이름-->
+  <td>라벤더 핸드 크림</td>
+  <!--상품수량-->
+  <td>
+   <label for="quantity">수량:</label>
+      <select name="handcream" if="quantity">
+        <option value="">--quantity--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+  </td>
+  <!--상품가격-->
+  <td class="price">
+   <span class="quantity_price">28,000원</span>
+  </td>
+  </tr>
+  </tbody> 
+  </table>
+
+
+  
+    
+<!--전환 버튼-->
+  <div id="action" class="order-button">
+   <a href="!" class="cart">장바구니</a>
+   <a href="!" class="wishlist">관심상품</a>
+   <a href="!" class="buy">구매하기</a>
+  </div>
+ </div> 
+</div>					
+
+  
+</body>
 </html>

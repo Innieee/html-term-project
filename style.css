@@ -3,16 +3,82 @@
   padding: 0;
 }
 
-/*sample*/
-
-header {
-  background-color: lightpink;
+/*헤더*/
+header{
+  background-color: pink;
 }
 
-footer {
-  background-color: lightyellow;
+.content-wrapper{
+  display: flex;
+  flex-direction: row;
 }
 
-main-wrapper{
-  margin: 0 auto;
+.top_logo {
+  margin-top: 37px;
+  width: 500px;
+  height: 50px;
+}
+
+.top_logo > a > img {
+  width:100px;
+  margin-left: 20px;
+}
+
+.category {
+  display: flex;
+  width: 1000px;
+  height: 50px;
+  margin-bottom: 50px;
+  justify-content: flex-end;
+}
+
+.category > li {
+  color: black;
+  display: inline-block;
+  margin: 30px;
+  list-style: none;
+
+}
+
+/*상품 이미지, 수량, 정보 등*/
+
+.product-info {
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-detail {
+  margin-left: 100px;
+  display: flexbox;
+  width: 500px;
+  background-color: yellowgreen;
+}
+
+.product-info > tbody, tr, th, td {
+
+  border: none;
+}
+
+.keyImg {
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.keyImg > img {
+  width: 400px;
+  
+}
+
+#action {
+  height: 100px;
+  background-color: grey;
+}
+
+#action > a {
+  margin: 30px;
+  list-style: none;
+  color: black;
+  border: 20px;
+  border-color: black;
 }
