@@ -5,7 +5,15 @@
 
 /*헤더*/
 header{
-  background-color: pink;
+  background-color: lavender;
+  font-family: 'NanumSquare';
+  width: 1000px;
+}
+
+body {
+  background-color: ;
+  margin: 0;
+  padding: 0;
 }
 
 .content-wrapper{
@@ -30,6 +38,7 @@ header{
   height: 50px;
   margin-bottom: 50px;
   justify-content: flex-end;
+  padding-right: 30px;
 }
 
 .category > li {
@@ -43,22 +52,54 @@ header{
 /*상품 이미지, 수량, 정보 등*/
 
 .product-info {
-  background-color: lightcoral;
   display: flex;
   flex-direction: row;
 }
 
-.product-detail {
-  margin-left: 100px;
-  display: flexbox;
+
+#product-detail {
+  padding-left: 100px;
+  padding-top: 100px;
+  display: inline-block;
+  float: right;
   width: 500px;
-  background-color: yellowgreen;
 }
 
-.product-info > tbody, tr, th, td {
 
+.product_table > tbody, tr, th, td {
   border: none;
+  outline: transparent;
 }
+
+.product_table > th {
+  font-family:'NanumSquareExtraBold';
+  padding-right: 50px;
+  height: 30px;
+}
+
+
+.product_table > td {
+  font-family: 'NanumSquare';
+  padding-left: 30px;
+}
+
+.product_order {
+  margin-top: 40px;
+}
+
+.product_order > tbody, tr, th, td {
+  font-family: 'NanumSquare';
+  border: none;
+  outline: transparent;
+  padding-right: 50px;
+}
+
+
+.order {
+  width: 500px;
+  display: inline-block;
+}
+
 
 .keyImg {
   padding: 50px;
@@ -70,15 +111,118 @@ header{
   
 }
 
-#action {
-  height: 100px;
-  background-color: grey;
+.action-button {
+  font-family: 'NanumSquareExtraBold';
+  margin-top: 50px;
 }
 
-#action > a {
-  margin: 30px;
-  list-style: none;
+
+.cart {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    display: block;
+    float: left;
+    font-weight: 300;
+    margin-right: 20px;
+    align-content: center;
+    padding-left: 20px;
+}
+
+.wish {
+  width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    display: block;
+    float: left;
+    font-weight: 300;
+    margin-right: 20px;
+    align-content: center;
+    padding-left: 20px;
+}
+
+.buy {
+  width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    display: block;
+    float: left;
+    font-weight: 300;
+    margin-right: 20px;
+    align-content: center;
+    padding-left: 20px;
+}
+
+/*상세페이지 하단*/
+
+.content {
+  width: 1000px;
+  border-top: 2px solid gray;
+  font-family: 'NanumSquare';
+  text-align: center;
+}
+
+h1 {
   color: black;
-  border: 20px;
-  border-color: black;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+
+.content > img {
+  width: 400px;
+  margin: auto;
+  display: block;
+}
+
+
+h3 {
+  font-family: 'NanumSquareBold'
+}
+
+.content > p {
+  margin-top: 10px;
+}
+
+/*푸터*/
+
+footer{
+  background-color: lavender;
+  width: 1000px;
+  margin-top: 100px;
+  height: 150px;
+}
+
+.footer_left {
+  display: inline-block;
+  padding-top: 45px;
+  padding-left: 45px;
+  padding-bottom: 45px;
+  font-family: 'NanumSquareBold';
+}
+
+.footer_right {
+  display: inline-block;
+  float: right;
+  margin-top:70px;
+  margin-right: 100px;
+  margin-bottom: 60px;
+  padding-right: 30px;
+}
+
+.logo_2 > a > img {
+  width: 100px;
 }

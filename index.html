@@ -2,11 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Term Project</title>
+    <title>Term Project- In Hee Yoon</title>
     <meta name="view port" content="width=device-width", initial-scale=1.0">
+    <meta name="author" content="In Hee">
+    <meta property="og:title" content="In Hee's Term Project">
+    <meta property="og:description" content="기말고사 상세페이지 만들기 과제입니다.">
 
-    <!-- fonts, css, js -->
+    <!-- css, js, font -->
     <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
   </head>
   
 <body>
@@ -16,14 +21,14 @@
 <!--헤더: 로고, 카테고리-->
 		<section class="content-wrapper">
 			<!-- 로고 -->
-			<div class="top_logo"><a href="/"><img src="logo.png"></a></div>
+			<div class="top_logo"><a href="/"><img src="logo.png" alt="Main Logo"></a></div>
       
 			<!-- 카테고리 -->
 				<ul class="category">
-          <li><a href="#">LOGIN</a></li>
-          <li><a href="#">MYPAGE</a></li>
-					<li><a href="#">ORDER</a></li>
-					<li><a href="#">CART</a></li>	
+          <li onclick = "login()" value = "Display"><a href="#">LOGIN</a></li>
+          <li onclick = "mypage()" value = "Display"><a href="#">MYPAGE</a></li>
+					<li onclick = "order()" value = "Display"><a href="#">ORDER</a></li>
+					<li onclick = "cart()" value = "Display"><a href="#">CART</a></li>	
 				</ul>
 		</section>
 	</div>
@@ -32,30 +37,32 @@
 <!--상품 디테일-->
 <div class="product-info">
   <div class="product-image">
-    <div class="keyImg ">
-        <img src="handcream1.png" alt="라벤더 핸드 크림">            
+    <div id="keyImg">
+        <a href="#" onclick ="keyimg()" value = "Display"><img src="handcream1.png" alt="Lavender Hand Cream" style="width: 400px;"></a>
     </div>
   </div>
 
 <!--상품 기본 정보, 이름, 가격-->
-  <div class="product-detail">
+  <div id="product-detail">
   <table border="1" summary="product_info">
-  <tbody class="product_info">
+  <tbody class="product_table">
   <!--상품명-->
-  <tr rel="상품명" class="product_info">
+  <tr rel="상품명" class="product_table">
   <th scope="row"><span>상품명</span></th>
   <td><span>라벤더 핸드 크림</span></td></tr>
   <!--상품가격-->
-  <tr rel="판매가" class="product_info">
+  <tr rel="판매가" class="product_table">
   <th scope="row"><span>판매가</span></th>
   <td><span>28,000원</span></td>
   </tr>
   </tbody>
   </table>
 
+<div class="order">
   <table border="2" summary="product_order">
   <!--상품 수량 선택하기-->
-  <tbody class="product_order1">
+  <div class="product_order">
+  <tbody class="product_order">
   <tr>
   <!--상품이름-->
   <td>라벤더 핸드 크림</td>
@@ -71,24 +78,70 @@
   </td>
   <!--상품가격-->
   <td class="price">
-   <span class="quantity_price">28,000원</span>
+  <span>28000원</span>
   </td>
   </tr>
-  </tbody> 
+  </tbody>
+  </div>
   </table>
-
+</div>
 
   
     
 <!--전환 버튼-->
-  <div id="action" class="order-button">
-   <a href="!" class="cart">장바구니</a>
-   <a href="!" class="wishlist">관심상품</a>
-   <a href="!" class="buy">구매하기</a>
-  </div>
+ <div class="action-button">
+  <a href="!" class="cart" onclick = "cart()" value = "Display">장바구니</a>
+  <a href="!" class="wish" onclick = "wish()" value = "Display">관심상품</a>
+  <a href="!" class="buy" onclick = "order()" value = "Display">구매하기</a>
+ </div>
  </div> 
 </div>					
 
+<!--상세 이미지-->
+
+<div class="content">
+ <h1>록0땅 라벤더 핸드크림</h1>
+ <img src="handcream2.png" alt="hand cream" style="width:400px; margin-bottom:20px;">
+   
+<h3>겨울철 핸드크림을 찾는다면?</h3>
+ <p style="margin-bottom:50px;">추운 겨울, 보습감과 향기 모두 놓칠 수 없으니까 바로 록0땅 핸드크림</p>
+
+<h3>프로방스 라벤더</h3>
+  <img src="lavender.png" alt="lavender field" style="width: 400px; margin-bottom:20px;">
+  <p>라벤더 하면 록0땅, 록0땅 라벤더는 모두 프로방스로부터...</p><p>프로방스에서 한 줄기 한 줄기 모아 만들었어요...</p>
+
+<img src="handcream3.png" alt="hand cream on hand" style="width: 400px; margin-top: 50px;">
+<h3>향기로운 사람의 비결</h3>
+  <p>록0땅 라벤더 핸드크림은 진정효과가 있어요</p><p>걸어다니는 인간 안정제가 되는 비결,</p>
+  <p>록0땅 라벤더 핸드크림</p>
+</div>
+
+<footer>
+<div id="footer">
+  <div class="footer_left">
+  <!-- 전화번호, 운영시간-->
+		<div class="footer_info">
+			<div class="numb">
+				TEL: 000-0000-0000
+			</div>
+			<div class="time">
+        MON-FRI 9:00~18:00, LUNCH 12:00~14:00 / SAT-SUN·HOLIDAY OFF
+			</div>
+    </div>
+
+		<!-- footer / 카피라이트 -->
+		<div class="copyright">
+			ⓒ L0C0TIANE ALL RIGHTS RESERVED. HOSTING BY IN HEE YOON.
+    </div>
+  </div>
   
+
+<div class="footer_right">
+		<div class="logo_2">
+			<a href="/"><img src="logo.png"></a>
+	</div>
+</div>
+</div>
+</footer>
 </body>
 </html>
